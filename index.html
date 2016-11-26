@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+		<style>
+			img{display: block;margin: 0 auto;}
+			body{background:black;color:#00ccff;font-family: 'Lato', sans-serif;}
+			.center{text-align: center; font-size:25px}
+			#copy{position:relative;bottom:10px}
+		</style>
+		<script>
+		var a = false;
+		$(document).click(function(){
+			$("img").css("position", "absolute");
+			a = true;
+		});
+		$(document).mousemove(function(e){
+			if(a){
+				$("img").css({left:e.pageX - 300, top:e.pageY - 240});
+			}    						
+		});	
+		</script>
+	</head>
+	<body>
+		<h1 class=center>Hey... Happy Birthday David Li!!</h1>
+		<img src="./pic.jpg" alt="Danny Devito's face on a dog..." height="485px" width="600px" />
+		<blockquote class=center cite="http://www.hplovecraft.com/">
+			"The world is indeed comic, but the joke is on mankind." ~ H.P. Lovecraft
+		</blockquote>
+		<p class=center>But let's be honest here, if the world is indeed a comic, you are that one kid in the comic who makes everyone laugh, the one who makes other people's day better. Thank you for always (since 5th grade) being my friend.</p>
+		<p class=center>Thank you for the years of fun we have shared, and I hope for many more to come.</p>
+		<audio autoplay hidden loop>
+  		<source src="music.mp3" type="audio/mpeg">
+			Your browser sucks... it doesn't support the audio element.
+		</audio>
+		<h5 id=copy>&copy;Pranoy Dutta 2016 Music by Lin‑Manuel Miranda</h5>
+	</body>
+</html>
